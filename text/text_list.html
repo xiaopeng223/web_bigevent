@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/text/text_list.css">
+</head>
+
+<body>
+    <!-- 卡片区域 -->
+    <div class="layui-card">
+        <div class="layui-card-header">文章列表</div>
+        <div class="layui-card-body">
+            <!-- 筛选区域 -->
+            <div class="layui-form layui-row layui-col-space16">
+                <div class="layui-col-md6">
+                    <select>
+                        <option>所有分类</option>
+                        <option>分类1</option>
+                        <option>分类2</option>
+                        <option>分类3</option>
+                    </select>
+                </div>
+                <div class="layui-col-md6">
+                    <select>
+                        <option>请选择</option>
+                        <option>选项 A</option>
+                        <option>选项 B</option>
+                        <option>选项 C</option>
+                    </select>
+                </div>
+                <button type="button" class="layui-btn">筛选</button>
+            </div>
+
+
+            <!-- 列表区域 -->
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                    <col width="150" />
+                    <col width="180" />
+                    <col width="150" />
+                    <col width="150" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>文章标题</th>
+                        <th>分类</th>
+                        <th>发表时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>aa</td>
+                        <td>分类2</td>
+                        <td>2024-05-18 17:00:23</td>
+                        <td>已发布</td>
+                        <td>
+                            <button type="button" class="layui-btn layui-btn-xs">添加</button>
+                            <button type="button" class="layui-btn layui-btn-xs layui-btn-danger">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>aa</td>
+                        <td>分类2</td>
+                        <td>2024-05-18 17:00:23</td>
+                        <td>已发布</td>
+                        <td>
+                            <button type="button" class="layui-btn layui-btn-xs">添加</button>
+                            <button type="button" class="layui-btn layui-btn-xs layui-btn-danger">删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 分页区域 -->
+            <div id="pageBox"></div>
+        </div>
+    </div>
+
+
+    <!-- 导入第三方的js插件 -->
+    <script src="../assets/lib/layui/layui.all.js"></script>
+    <script src="../assets/lib/jquery.js"></script>
+    <!-- 导入自己的js脚本 -->
+    <script src="../assets/js/text/text_list.js"></script>
+</body>
+
+</html>
