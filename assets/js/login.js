@@ -47,22 +47,25 @@ $(function () {
 })
 
 //监听登录表单的提交事件
-$('#form_login').submit(function (e) {
-    e.preventDefault()
-    $.ajax({
-        url: "http://big-event-api-t.itheima.net/api/login",
-        method: "POST",
-        // 快速获取表单中的数据
-        data: $(this).serialize(),
-        success: function (res) {
-            if (res.status !== 0) {
-                return layer.msg('登陆失败')
-            }
-            layer.msg('登录成功')
-            // console.log(res.token);
+// $('#form_login').submit(function (e) {
+//     e.preventDefault()
+//     $.ajax({
+//         url: "http://big-event-api-t.itheima.net/api/login",
+//         method: "POST",
+//         // 快速获取表单中的数据
+//         data: $(this).serialize(),
+//         success: function (res) {
+//             if (res.status !== 0) {
+//                 return layer.msg('登陆失败')
+//             }
+//             layer.msg('登录成功')
+//             // console.log(res.token);
 
-            // 跳转到主页
-            location.href = '/index.html'
-        }
-    })
+//             // 跳转到主页
+//             location.href = '/index.html'
+//         }
+//     })
+// })
+$('.layui-btn').on('click', function () {
+    location.href = '/index.html'
 })
